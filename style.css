@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    }
+.bannerimg {
+    position:relative;
+    top: 70px;
+    width: 100%;
+    border-left: 10px solid #EF6C00;
+    border-right:  10px solid #EF6C00;
+    border-top:  10px solid #EF6C00;
+}
+nav {
+width: 100%;
+height: 70px;
+background:#FFA726;
+position:fixed;
+top: 0;
+border-bottom: 10px solid #FF9800;
+
+}
+nav img {
+width: 300px;
+height: 60px;
+
+/**/
+position:absolute;
+margin: 0px auto;
+left: 0;
+right: 0;
+}
+.btn {
+position:relative;
+top: 60px;
+width: 100%;
+border: 10px solid #EF6C00;
+text-align:center;
+background-image:url("bg.png");
+background-size: 380px;
+color:#fff;
+}
+.btn video {
+margin-top: 10px;
+width: 95%;
+border: 5px solid #fff;
+}
+.btn img {
+margin-top: 10px;
+width: 95%;
+background:#111;
+border: 5px solid #fff;
+}
+
+.btn{
+    width: 100%;
+    height: 200%;
+    animation: loader 2s linear infinite;
+
+}
+/*Color1 : #1E9600
+Color2 : #FFF200
+Color3 : #FF0000*/
+@keyframes loader{
+	0%{
+	background:#1565C0;
+	}
+    50%{
+	background:#2E7D32;
+    }
+    75%{
+	background:#F9A825;
+    }
+    100%{
+    background:#1565C0;
+    }
+    to{
+    }
+}
+/*destop*/
+@media (min-width: 768px) {
+	.android{
+	visibility:hidden;
+	}
+	.pc{
+	visibility:visible;
+	}
+}
+@media(max-width: 480px) {
+	.android{
+	visibility:visible;
+	}
+	.pc{
+	visibility:hidden;
+	}
+}
+
+
+.1no {
+background:black;
+width:100%;
+height:auto;
+}
+.pc {
+text-align:center;
+color:white;
+text-decoration:none;
+}
+.android {
+text-align:center;
+color:white;
+text-decoration:none;
+}
