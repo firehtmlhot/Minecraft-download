@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+  font-family:minecraft;
+  src: url(../font/MinecraftItalic-R8Mo.otf);
+}
+@font-face {
+  font-family:minecraft2;
+  src: url(../font/MinecraftRegular-Bmg3.otf);
+}
+
+p,span,pre{
+font-family:minecraft;
+}
+
+h1,h2,h3,h4,h5,h6,a{
+font-family:minecraft2;
+}
+body {
+	--b23-:b23;
+    --box1-:#FFA726;
+    --border1-:#FF9800;
+    --birder2-:#EF6C00;
+    --23-:#757575;
+    --b2-: #FFA73C;
+    --bw-:url("../media/images/background.webp");
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    }
+    .dark {
+	    --box1-:#616161;
+	    --birder2-:#212121;
+	    --border1-:#424242;
+	    --b23-:dark;
+	    --b2-:#000;
+	    --23-:#388E3C;
+	    --bw-:#000;
+    }
+.bannerimg {
+    position:relative;
+    top: 70px;
+    width: 100%;
+    border-left: 10px solid var(--birder2-);
+    border-right:  10px solid var(--birder2-);
+    border-top:  10px solid var(--birder2-);
+}
+.overlay {
+position:relative;
+width: 100%;
+height: 100%;
+background:rbga(0,0,0,0.90);
+}
+/**/
+.btn {
+	position:relative;
+	top: 60px;
+	border: 10px solid var(--birder2-);
+	text-align:center;
+	background-image:url("bg.png");
+	background-size: 380px;
+	color:#fff;
+	width: 100%;
+	height: 200%;
+	background:var(--b2-);
+
+}
+.btn img {
+
+width: 80%;
+border-radius: 30px;
+border: 2px solid rgba(255,255,255,0.1);
+box-shadow: 10px 10px 35px rgba(0,0,0,0.25);
+background-size:cover;
+}
+
+
+p {
+padding: 25px 5px;
+
+}
+
+
+
+
+/*hidden davice width*/
+.1no {
+	background:black;
+	width:100%;
+	height:auto;
+}
+.pc {
+	text-align:center;
+	color:white;
+	text-decoration:none;
+}
+.android {
+	text-align:center;
+	color:white;
+	text-decoration:none;
+}
+
+
+
+
+
+
+
+/*mobile*/
+@media(max-width: 480px) {
+	.btn iframe {
+	margin-top: 10px;
+	width: 95%;
+	border: 5px solid #fff;
+	border-radius: 20px;
+	}
+	.android{
+	visibility:visible;
+	}
+	.pc{
+	visibility:hidden;
+	}
+	.list li a {
+	color:#fff;
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+	}
+	footer {
+	position:fixed;
+	bottom:0;
+	left: 0;
+	background:var(--box1-);
+	height: 38px;
+	text-align:center;
+	width:100%;
+	box-shadow:0px 0px 10px 2px black;
+	}
+}
+
+
+
+
+@media (min-width: 768px) {
+	.btn iframe {
+	margin-top: 10px;
+	width: 95%;
+	height: 500px;
+	border: 5px solid #fff;
+	border-radius: 20px;
+	}
+	.list li a {
+	color:#fff;
+	font-size: 44px;
+	text-decoration: none;
+	text-transform: uppercase;
+	}
+	
+	.android{
+	visibility:hidden;
+	}
+	.pc{
+	visibility:visible;
+	}
+	footer {
+	position:fixed;
+	bottom:40px;
+	right: 0;
+	background:var(--box1-);
+	height: 38px;
+	text-align:center;
+	width:200px;
+	box-shadow:0px 0px 10px 2px black;
+	}
+}
+
+/*header image* */
+nav {
+	width: 100%;
+	height: 70px;
+	background:var(--box1-);
+	position:fixed;
+	top: 0;
+	border-bottom: 10px solid var(--border1-);
+	box-shadow:0px 0px 10px 2px black;
+}
+nav img {
+	width: 300px;
+	height: 60px;
+	position:absolute;
+	margin: 0px auto;
+	left: 0;
+	right: 0;
+}
+
+.downloadlink {
+	text-decoration-color:#2E7D32;
+	color:#2E7D32;
+	font-weight:600;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+
+/*footer*/
+footer a{
+	text-decoration:none;
+	color:#fff;
+	text-transform:uppercase;
+	font-weight: 700;
+	font-size: 30px;
+
+}
+
+
+#theme-toggle {
+position:absolute;
+right: 10px;
+
+background:black;
+border-radius: 7px;
+text-align:center;
+
+text-transform:uppercase;
+}
+
+
+/*popup*/
+.popup {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.0);
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
+  display: none;
+}
+.popup.active {
+  display: block;
+}
+.popup.active .popup-body {
+  -webkit-animation: bottom 0.5s forwards;
+          animation: bottom 0.5s forwards;
+}
+.popup .popup-body {
+  transition: 5s;
+  width: 500px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.popup-body a {
+color:#000;
+text-decoration:none;
+}
+
+@-webkit-keyframes bottom {
+  to {
+    top: 50%;
+  }
+}
+
+@keyframes bottom {
+  to {
+    top: 50%;
+  }
+}
